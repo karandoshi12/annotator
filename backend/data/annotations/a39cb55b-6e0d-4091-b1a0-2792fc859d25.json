@@ -1,0 +1,1652 @@
+{
+  "0": {
+    "frame_id": "f8e2c4a1-3b7d-4e9f-a6c8-2d1f5e8b9a0c",
+    "video_filename": "Furniture- Precision Panel Sizing.mp4",
+    "frame_index": 0,
+    "timestamp_seconds": 0.0,
+    "capture_interval_seconds": 10.0,
+    "annotated_at": "2026-03-14T11:18:24.989580+00:00",
+    "annotator": "claude-3-5-sonnet",
+    "annotation_version": "1.0.0",
+    "scene_geometry": {
+      "workspace_type": "workbench",
+      "camera_perspective": "first_person",
+      "camera_height_estimate_m": 1.4,
+      "estimated_workspace_dimensions_m": {
+        "width": 3.0,
+        "depth": 2.5,
+        "height": 1.0
+      },
+      "depth_layers": [
+        "operator_hand",
+        "white_panel",
+        "table_saw_blade",
+        "sliding_table",
+        "fence_guide",
+        "dark_panel_surface",
+        "background_panels",
+        "workshop_wall",
+        "window"
+      ],
+      "reference_objects": [
+        "table_saw_blade 300",
+        "white_panel_thickness 18"
+      ],
+      "occlusions": [
+        "saw_blade_partially_occluded_by_white_panel",
+        "sliding_mechanism_occluded_by_table_surface"
+      ],
+      "spatial_relationships": [
+        {
+          "subject": "white_panel",
+          "relation": "in_contact_with",
+          "object": "sliding_table"
+        },
+        {
+          "subject": "operator_hand",
+          "relation": "holding",
+          "object": "white_panel"
+        },
+        {
+          "subject": "white_panel",
+          "relation": "adjacent_to",
+          "object": "saw_blade"
+        },
+        {
+          "subject": "fence_guide",
+          "relation": "left_of",
+          "object": "white_panel"
+        },
+        {
+          "subject": "dark_panel",
+          "relation": "above",
+          "object": "sliding_table"
+        },
+        {
+          "subject": "background_operator",
+          "relation": "right_of",
+          "object": "table_saw"
+        }
+      ]
+    },
+    "human_presence": {
+      "count": 2,
+      "operators": [
+        {
+          "id": "operator_1",
+          "body_region_visible": [
+            "right_hand"
+          ],
+          "dominant_hand": "right",
+          "pose_state": "standing",
+          "gaze_direction": "at_workpiece",
+          "action_verb": "feeding",
+          "action_phase": "active_manipulation",
+          "grip_type": "power_grip",
+          "force_estimate": "moderate",
+          "ppe_worn": [],
+          "approximate_position_in_frame": {
+            "x_pct": 0.35,
+            "y_pct": 0.85
+          }
+        },
+        {
+          "id": "operator_2",
+          "body_region_visible": [
+            "torso",
+            "right_arm",
+            "left_arm"
+          ],
+          "dominant_hand": "unknown",
+          "pose_state": "standing",
+          "gaze_direction": "at_workpiece",
+          "action_verb": "operating",
+          "action_phase": "active_manipulation",
+          "grip_type": "bimanual",
+          "force_estimate": "moderate",
+          "ppe_worn": [],
+          "approximate_position_in_frame": {
+            "x_pct": 0.55,
+            "y_pct": 0.25
+          }
+        }
+      ]
+    },
+    "objects": [
+      {
+        "id": "obj_001",
+        "category": "machine",
+        "label": "sliding_table_saw_panel_saw",
+        "bounding_box_pct": {
+          "x": 0.0,
+          "y": 0.2,
+          "width": 0.85,
+          "height": 0.7
+        },
+        "confidence": 0.95,
+        "state": "in_use",
+        "material": "steel_cast_iron",
+        "surface_finish_visible": "anodized",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "floor"
+      },
+      {
+        "id": "obj_002",
+        "category": "workpiece",
+        "label": "white_melamine_panel_18mm",
+        "bounding_box_pct": {
+          "x": 0.35,
+          "y": 0.55,
+          "width": 0.35,
+          "height": 0.35
+        },
+        "confidence": 0.92,
+        "state": "in_use",
+        "material": "MDF_melamine_coated",
+        "surface_finish_visible": "lacquered",
+        "approximate_size_class": "large_>50cm",
+        "held_by": "operator_1",
+        "contact_surface": "sliding_table"
+      },
+      {
+        "id": "obj_003",
+        "category": "workpiece",
+        "label": "dark_laminate_panel_large",
+        "bounding_box_pct": {
+          "x": 0.25,
+          "y": 0.05,
+          "width": 0.55,
+          "height": 0.35
+        },
+        "confidence": 0.88,
+        "state": "idle",
+        "material": "MDF_laminate_coated",
+        "surface_finish_visible": "lacquered",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "saw_table_surface"
+      },
+      {
+        "id": "obj_004",
+        "category": "machine",
+        "label": "fence_guide_aluminum",
+        "bounding_box_pct": {
+          "x": 0.0,
+          "y": 0.15,
+          "width": 0.35,
+          "height": 0.15
+        },
+        "confidence": 0.9,
+        "state": "in_use",
+        "material": "aluminum_extruded",
+        "surface_finish_visible": "anodized",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "saw_table"
+      },
+      {
+        "id": "obj_005",
+        "category": "machine",
+        "label": "circular_saw_blade_300mm",
+        "bounding_box_pct": {
+          "x": 0.55,
+          "y": 0.55,
+          "width": 0.1,
+          "height": 0.15
+        },
+        "confidence": 0.85,
+        "state": "in_use",
+        "material": "steel_carbide_tipped",
+        "surface_finish_visible": "raw",
+        "approximate_size_class": "medium_10-50cm",
+        "held_by": null,
+        "contact_surface": "saw_arbor"
+      },
+      {
+        "id": "obj_006",
+        "category": "fixture",
+        "label": "sliding_carriage_table",
+        "bounding_box_pct": {
+          "x": 0.1,
+          "y": 0.45,
+          "width": 0.5,
+          "height": 0.35
+        },
+        "confidence": 0.88,
+        "state": "in_use",
+        "material": "aluminum_steel",
+        "surface_finish_visible": "anodized",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "saw_rails"
+      },
+      {
+        "id": "obj_007",
+        "category": "material",
+        "label": "stacked_panels_background",
+        "bounding_box_pct": {
+          "x": 0.7,
+          "y": 0.1,
+          "width": 0.3,
+          "height": 0.6
+        },
+        "confidence": 0.8,
+        "state": "idle",
+        "material": "MDF_various",
+        "surface_finish_visible": "raw",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "panel_rack"
+      },
+      {
+        "id": "obj_008",
+        "category": "power_tool",
+        "label": "portable_power_tool_blue",
+        "bounding_box_pct": {
+          "x": 0.4,
+          "y": 0.12,
+          "width": 0.08,
+          "height": 0.08
+        },
+        "confidence": 0.7,
+        "state": "idle",
+        "material": "ABS_plastic",
+        "surface_finish_visible": "painted",
+        "approximate_size_class": "medium_10-50cm",
+        "held_by": "operator_2",
+        "contact_surface": null
+      },
+      {
+        "id": "obj_009",
+        "category": "fixture",
+        "label": "hold_down_clamp_black",
+        "bounding_box_pct": {
+          "x": 0.35,
+          "y": 0.22,
+          "width": 0.05,
+          "height": 0.05
+        },
+        "confidence": 0.75,
+        "state": "in_use",
+        "material": "steel_plastic",
+        "surface_finish_visible": "painted",
+        "approximate_size_class": "small_<10cm",
+        "held_by": null,
+        "contact_surface": "fence_guide"
+      }
+    ],
+    "process": {
+      "operation_name": "panel_rip_cutting",
+      "operation_category": "cutting",
+      "process_phase": "in_progress",
+      "estimated_completion_pct": 40,
+      "workpiece_state_before": "full_size_melamine_panel_uncut",
+      "workpiece_state_after": "panel_cut_to_specified_width",
+      "quality_indicators": [
+        "panel_aligned_against_fence",
+        "steady_feed_rate_observed",
+        "blade_guard_position_appropriate"
+      ],
+      "defects_visible": [],
+      "production_sequence_tag": "STEP_01_RIP_CUT_PANEL_TO_WIDTH",
+      "machine_settings_visible": null,
+      "consumables_present": []
+    },
+    "robot_instruction": {
+      "target_action": "CUT_MATERIAL",
+      "action_parameters": {
+        "cut_type": "rip_cut",
+        "blade_diameter_mm": 300,
+        "feed_rate_mm_s": 15,
+        "cut_depth_mm": 18,
+        "material_thickness_mm": 18,
+        "fence_distance_mm": null,
+        "blade_height_above_material_mm": 10
+      },
+      "end_effector_required": "parallel_gripper",
+      "grasp_pose_hint": {
+        "approach_vector": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "grasp_orientation": "top_down",
+        "pregrasp_offset_mm": 100
+      },
+      "target_object_id": "obj_002",
+      "target_location_description": "white melamine panel positioned on sliding carriage, aligned against fence guide, being fed through rotating saw blade",
+      "force_torque_profile": {
+        "max_force_N": 50.0,
+        "contact_force_N": 20.0,
+        "approach_speed": "slow"
+      },
+      "success_condition": "panel_passes_completely_through_blade_with_clean_straight_cut",
+      "prerequisite_state": "panel_secured_against_fence_blade_at_full_speed",
+      "safety_clearance_mm": 500,
+      "estimated_duration_seconds": 8.0,
+      "human_handoff_required": true,
+      "next_logical_action": "PICK_PART"
+    },
+    "safety": {
+      "overall_compliance": "minor_violation",
+      "ppe_compliance": false,
+      "missing_ppe": [
+        "safety_glasses",
+        "ear_protection",
+        "push_stick"
+      ],
+      "hazards_detected": [
+        {
+          "type": "flying_debris",
+          "severity": "high",
+          "description": "saw blade cutting panel generates chips and dust without visible extraction"
+        },
+        {
+          "type": "pinch_point",
+          "severity": "high",
+          "description": "rotating blade exposed during cutting operation"
+        },
+        {
+          "type": "noise",
+          "severity": "medium",
+          "description": "table saw operation generates high noise levels"
+        }
+      ],
+      "hazard_types": [
+        "pinch_point",
+        "flying_debris",
+        "noise",
+        "sharp_edge"
+      ],
+      "human_robot_proximity": "danger_<0.5m",
+      "robot_stop_required": true,
+      "housekeeping_state": "minor_clutter",
+      "lockout_tagout_visible": false,
+      "emergency_stop_accessible": null
+    },
+    "scene_context": {
+      "lighting_quality": "adequate",
+      "image_quality": "sharp",
+      "environment": "indoor_workshop",
+      "ambient_conditions": {
+        "dust_level": "medium",
+        "chips_present": true,
+        "coolant_visible": false
+      },
+      "concurrent_operations": [
+        "secondary_operator_handling_material_in_background"
+      ],
+      "annotation_flags": [
+        "needs_human_review",
+        "partial_visibility"
+      ],
+      "free_text_notes": "Active panel saw cutting operation in progress. Operator feeding white melamine panel through sliding table saw. Hand proximity to blade is concerning - push stick should be used. Background shows stacked panel materials and second operator. Workshop appears to be production furniture manufacturing facility with multiple panel sizing operations."
+    }
+  },
+  "1": {
+    "frame_id": "f8e2c4a1-3b7d-4e9f-a6c8-2d1f5e8b9a0c",
+    "video_filename": "Furniture- Precision Panel Sizing.mp4",
+    "frame_index": 1,
+    "timestamp_seconds": 10.0,
+    "capture_interval_seconds": 10.0,
+    "annotated_at": "2026-03-14T11:18:52.267767+00:00",
+    "annotator": "claude-3-5-sonnet",
+    "annotation_version": "1.0.0",
+    "scene_geometry": {
+      "workspace_type": "conveyor",
+      "camera_perspective": "first_person",
+      "camera_height_estimate_m": 1.4,
+      "estimated_workspace_dimensions_m": {
+        "width": 1.5,
+        "depth": 1.2,
+        "height": 0.9
+      },
+      "depth_layers": [
+        "operator_hands",
+        "white_panel",
+        "conveyor_belt",
+        "panel_sizing_machine",
+        "metal_guide_rails",
+        "background_equipment"
+      ],
+      "reference_objects": [
+        "white_laminated_panel approximately_500x500mm",
+        "red_safety_handle 150mm"
+      ],
+      "occlusions": [
+        "conveyor_belt_partially_occluded_by_panel",
+        "machine_base_occluded_by_panel"
+      ],
+      "spatial_relationships": [
+        {
+          "subject": "operator_hands",
+          "relation": "in_contact_with",
+          "object": "white_panel"
+        },
+        {
+          "subject": "white_panel",
+          "relation": "above",
+          "object": "conveyor_belt"
+        },
+        {
+          "subject": "red_safety_handle",
+          "relation": "right_of",
+          "object": "white_panel"
+        },
+        {
+          "subject": "metal_guide_rail",
+          "relation": "adjacent_to",
+          "object": "white_panel"
+        },
+        {
+          "subject": "white_panel",
+          "relation": "in_contact_with",
+          "object": "conveyor_belt"
+        }
+      ]
+    },
+    "human_presence": {
+      "count": 1,
+      "operators": [
+        {
+          "id": "operator_1",
+          "body_region_visible": [
+            "left_hand",
+            "right_hand",
+            "left_arm",
+            "right_arm"
+          ],
+          "dominant_hand": "both",
+          "pose_state": "standing",
+          "gaze_direction": "at_workpiece",
+          "action_verb": "positioning",
+          "action_phase": "active_manipulation",
+          "grip_type": "bimanual",
+          "force_estimate": "moderate",
+          "ppe_worn": [],
+          "approximate_position_in_frame": {
+            "x_pct": 0.35,
+            "y_pct": 0.85
+          }
+        }
+      ]
+    },
+    "objects": [
+      {
+        "id": "obj_001",
+        "category": "workpiece",
+        "label": "white_laminated_panel_500x500mm",
+        "bounding_box_pct": {
+          "x": 0.15,
+          "y": 0.25,
+          "width": 0.55,
+          "height": 0.55
+        },
+        "confidence": 0.95,
+        "state": "being_transported",
+        "material": "MDF_white_laminate",
+        "surface_finish_visible": "lacquered",
+        "approximate_size_class": "large_>50cm",
+        "held_by": "operator_1",
+        "contact_surface": "conveyor_belt"
+      },
+      {
+        "id": "obj_002",
+        "category": "machine",
+        "label": "panel_sizing_conveyor_system",
+        "bounding_box_pct": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1.0,
+          "height": 0.7
+        },
+        "confidence": 0.92,
+        "state": "in_use",
+        "material": "steel_aluminum",
+        "surface_finish_visible": "anodized",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "floor"
+      },
+      {
+        "id": "obj_003",
+        "category": "machine",
+        "label": "green_mesh_conveyor_belt",
+        "bounding_box_pct": {
+          "x": 0.0,
+          "y": 0.45,
+          "width": 0.25,
+          "height": 0.35
+        },
+        "confidence": 0.9,
+        "state": "in_use",
+        "material": "rubber_mesh",
+        "surface_finish_visible": "raw",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "machine_frame"
+      },
+      {
+        "id": "obj_004",
+        "category": "safety_equipment",
+        "label": "red_emergency_stop_handle",
+        "bounding_box_pct": {
+          "x": 0.58,
+          "y": 0.28,
+          "width": 0.12,
+          "height": 0.15
+        },
+        "confidence": 0.88,
+        "state": "idle",
+        "material": "ABS_plastic",
+        "surface_finish_visible": "painted",
+        "approximate_size_class": "medium_10-50cm",
+        "held_by": null,
+        "contact_surface": "machine_rail"
+      },
+      {
+        "id": "obj_005",
+        "category": "fixture",
+        "label": "aluminum_guide_rail",
+        "bounding_box_pct": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 0.9,
+          "height": 0.15
+        },
+        "confidence": 0.85,
+        "state": "in_use",
+        "material": "aluminum_extruded",
+        "surface_finish_visible": "anodized",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "machine_frame"
+      },
+      {
+        "id": "obj_006",
+        "category": "fixture",
+        "label": "metal_fence_guide",
+        "bounding_box_pct": {
+          "x": 0.7,
+          "y": 0.15,
+          "width": 0.3,
+          "height": 0.6
+        },
+        "confidence": 0.87,
+        "state": "in_use",
+        "material": "steel_brushed",
+        "surface_finish_visible": "raw",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "machine_frame"
+      },
+      {
+        "id": "obj_007",
+        "category": "hand_tool",
+        "label": "utility_knife_orange",
+        "bounding_box_pct": {
+          "x": 0.85,
+          "y": 0.18,
+          "width": 0.05,
+          "height": 0.08
+        },
+        "confidence": 0.75,
+        "state": "idle",
+        "material": "steel_plastic",
+        "surface_finish_visible": "painted",
+        "approximate_size_class": "small_<10cm",
+        "held_by": null,
+        "contact_surface": "metal_surface"
+      }
+    ],
+    "process": {
+      "operation_name": "panel_positioning_for_sizing",
+      "operation_category": "material_handling",
+      "process_phase": "in_progress",
+      "estimated_completion_pct": 25,
+      "workpiece_state_before": "unsized_laminated_panel",
+      "workpiece_state_after": "panel_aligned_for_precision_cut",
+      "quality_indicators": [
+        "panel_flat_on_conveyor",
+        "edges_parallel_to_guide_rails",
+        "operator_using_both_hands_for_control"
+      ],
+      "defects_visible": [],
+      "production_sequence_tag": "STEP_01_POSITION_PANEL_FOR_SIZING",
+      "machine_settings_visible": null,
+      "consumables_present": []
+    },
+    "robot_instruction": {
+      "target_action": "POSITION_COMPONENT",
+      "action_parameters": {
+        "target_position": "against_fence_guide",
+        "alignment_axis": "parallel_to_conveyor_direction",
+        "positioning_tolerance_mm": 1.0,
+        "feed_direction": "forward_into_machine"
+      },
+      "end_effector_required": "vacuum_cup",
+      "grasp_pose_hint": {
+        "approach_vector": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "grasp_orientation": "top_down",
+        "pregrasp_offset_mm": 50
+      },
+      "target_object_id": "obj_001",
+      "target_location_description": "center_of_conveyor_belt_aligned_with_metal_fence_guide_for_precision_sizing_cut",
+      "force_torque_profile": {
+        "max_force_N": 50.0,
+        "contact_force_N": 20.0,
+        "approach_speed": "slow"
+      },
+      "success_condition": "panel_edge_flush_against_fence_guide_and_centered_on_conveyor",
+      "prerequisite_state": "panel_lifted_and_clear_of_obstructions",
+      "safety_clearance_mm": 500,
+      "estimated_duration_seconds": 8.0,
+      "human_handoff_required": true,
+      "next_logical_action": "CUT_MATERIAL"
+    },
+    "safety": {
+      "overall_compliance": "minor_violation",
+      "ppe_compliance": false,
+      "missing_ppe": [
+        "safety_glasses",
+        "gloves"
+      ],
+      "hazards_detected": [
+        {
+          "type": "pinch_point",
+          "severity": "medium",
+          "description": "hands_near_conveyor_belt_and_moving_machinery"
+        },
+        {
+          "type": "sharp_edge",
+          "severity": "low",
+          "description": "panel_edges_may_be_sharp_from_previous_cutting"
+        }
+      ],
+      "hazard_types": [
+        "pinch_point",
+        "sharp_edge"
+      ],
+      "human_robot_proximity": "no_humans",
+      "robot_stop_required": false,
+      "housekeeping_state": "clear",
+      "lockout_tagout_visible": false,
+      "emergency_stop_accessible": true
+    },
+    "scene_context": {
+      "lighting_quality": "adequate",
+      "image_quality": "sharp",
+      "environment": "indoor_workshop",
+      "ambient_conditions": {
+        "dust_level": "low",
+        "chips_present": false,
+        "coolant_visible": false
+      },
+      "concurrent_operations": [],
+      "annotation_flags": [
+        "partial_visibility"
+      ],
+      "free_text_notes": "Operator is manually feeding a white laminated panel into a precision panel sizing machine. The panel appears to be MDF with white laminate finish. Red safety handle visible on right side of machine suggests emergency stop capability. Green mesh conveyor belt visible on left side will transport panel through cutting mechanism. Machine appears to be an industrial panel saw or beam saw for precision furniture panel sizing."
+    }
+  },
+  "2": {
+    "frame_id": "f8e2c4a1-9b3d-4e5f-a6c7-8d9e0f1a2b3c",
+    "video_filename": "Furniture- Precision Panel Sizing.mp4",
+    "frame_index": 2,
+    "timestamp_seconds": 20.0,
+    "capture_interval_seconds": 10.0,
+    "annotated_at": "2026-03-14T11:19:20.722711+00:00",
+    "annotator": "claude-3-5-sonnet",
+    "annotation_version": "1.0.0",
+    "scene_geometry": {
+      "workspace_type": "conveyor",
+      "camera_perspective": "oblique",
+      "camera_height_estimate_m": 1.4,
+      "estimated_workspace_dimensions_m": {
+        "width": 1.2,
+        "depth": 0.9,
+        "height": 0.3
+      },
+      "depth_layers": [
+        "operator_hand",
+        "white_panel",
+        "conveyor_belt",
+        "machine_frame",
+        "push_sticks",
+        "background"
+      ],
+      "reference_objects": [
+        "white_laminate_panel approximately_500x500mm",
+        "red_push_stick 300mm"
+      ],
+      "occlusions": [
+        "conveyor_mechanism_occluded_by_panel",
+        "machine_base_occluded_by_frame"
+      ],
+      "spatial_relationships": [
+        {
+          "subject": "operator_right_hand",
+          "relation": "in_contact_with",
+          "object": "white_panel"
+        },
+        {
+          "subject": "white_panel",
+          "relation": "above",
+          "object": "conveyor_belt"
+        },
+        {
+          "subject": "red_push_sticks",
+          "relation": "right_of",
+          "object": "white_panel"
+        },
+        {
+          "subject": "conveyor_belt",
+          "relation": "left_of",
+          "object": "metal_guide_rail"
+        },
+        {
+          "subject": "white_panel",
+          "relation": "adjacent_to",
+          "object": "metal_fence_guide"
+        }
+      ]
+    },
+    "human_presence": {
+      "count": 1,
+      "operators": [
+        {
+          "id": "operator_1",
+          "body_region_visible": [
+            "right_arm",
+            "right_hand"
+          ],
+          "dominant_hand": "right",
+          "pose_state": "standing",
+          "gaze_direction": "at_workpiece",
+          "action_verb": "positioning",
+          "action_phase": "active_manipulation",
+          "grip_type": "power_grip",
+          "force_estimate": "moderate",
+          "ppe_worn": [],
+          "approximate_position_in_frame": {
+            "x_pct": 0.55,
+            "y_pct": 0.75
+          }
+        }
+      ]
+    },
+    "objects": [
+      {
+        "id": "obj_001",
+        "category": "workpiece",
+        "label": "white_laminate_panel_500x500mm",
+        "bounding_box_pct": {
+          "x": 0.22,
+          "y": 0.28,
+          "width": 0.45,
+          "height": 0.52
+        },
+        "confidence": 0.95,
+        "state": "being_transported",
+        "material": "MDF_white_laminate",
+        "surface_finish_visible": "lacquered",
+        "approximate_size_class": "large_>50cm",
+        "held_by": "operator_1",
+        "contact_surface": "conveyor_belt"
+      },
+      {
+        "id": "obj_002",
+        "category": "machine",
+        "label": "panel_sizing_saw_conveyor_infeed",
+        "bounding_box_pct": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1.0,
+          "height": 1.0
+        },
+        "confidence": 0.92,
+        "state": "in_use",
+        "material": "steel_aluminum_frame",
+        "surface_finish_visible": "anodized",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "floor"
+      },
+      {
+        "id": "obj_003",
+        "category": "machine",
+        "label": "mesh_conveyor_belt",
+        "bounding_box_pct": {
+          "x": 0.0,
+          "y": 0.35,
+          "width": 0.25,
+          "height": 0.45
+        },
+        "confidence": 0.9,
+        "state": "in_use",
+        "material": "rubber_mesh",
+        "surface_finish_visible": "raw",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "machine_frame"
+      },
+      {
+        "id": "obj_004",
+        "category": "hand_tool",
+        "label": "red_plastic_push_stick",
+        "bounding_box_pct": {
+          "x": 0.72,
+          "y": 0.18,
+          "width": 0.12,
+          "height": 0.35
+        },
+        "confidence": 0.88,
+        "state": "idle",
+        "material": "ABS_plastic",
+        "surface_finish_visible": "raw",
+        "approximate_size_class": "medium_10-50cm",
+        "held_by": null,
+        "contact_surface": "machine_table"
+      },
+      {
+        "id": "obj_005",
+        "category": "hand_tool",
+        "label": "red_plastic_push_stick_2",
+        "bounding_box_pct": {
+          "x": 0.78,
+          "y": 0.42,
+          "width": 0.15,
+          "height": 0.2
+        },
+        "confidence": 0.85,
+        "state": "idle",
+        "material": "ABS_plastic",
+        "surface_finish_visible": "raw",
+        "approximate_size_class": "medium_10-50cm",
+        "held_by": null,
+        "contact_surface": "machine_table"
+      },
+      {
+        "id": "obj_006",
+        "category": "fixture",
+        "label": "aluminum_fence_guide_rail",
+        "bounding_box_pct": {
+          "x": 0.15,
+          "y": 0.0,
+          "width": 0.7,
+          "height": 0.12
+        },
+        "confidence": 0.9,
+        "state": "in_use",
+        "material": "aluminum_extruded",
+        "surface_finish_visible": "anodized",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "machine_frame"
+      },
+      {
+        "id": "obj_007",
+        "category": "fixture",
+        "label": "panel_clamp_mechanism",
+        "bounding_box_pct": {
+          "x": 0.25,
+          "y": 0.02,
+          "width": 0.15,
+          "height": 0.1
+        },
+        "confidence": 0.75,
+        "state": "idle",
+        "material": "steel_aluminum",
+        "surface_finish_visible": "anodized",
+        "approximate_size_class": "medium_10-50cm",
+        "held_by": null,
+        "contact_surface": "fence_rail"
+      }
+    ],
+    "process": {
+      "operation_name": "panel_positioning_for_precision_cut",
+      "operation_category": "material_handling",
+      "process_phase": "in_progress",
+      "estimated_completion_pct": 30,
+      "workpiece_state_before": "uncut_laminate_panel_at_infeed",
+      "workpiece_state_after": "panel_aligned_against_fence_ready_for_cut",
+      "quality_indicators": [
+        "panel_flat_on_conveyor",
+        "edge_approaching_fence_alignment",
+        "no_visible_surface_damage"
+      ],
+      "defects_visible": [],
+      "production_sequence_tag": "STEP_02_POSITION_PANEL_FOR_SIZING_CUT",
+      "machine_settings_visible": null,
+      "consumables_present": []
+    },
+    "robot_instruction": {
+      "target_action": "ALIGN_COMPONENT",
+      "action_parameters": {
+        "alignment_reference": "fence_guide_rail",
+        "alignment_axis": "y",
+        "target_offset_mm": 0,
+        "alignment_tolerance_mm": 0.5,
+        "feed_direction": "positive_x",
+        "contact_force_N": 15
+      },
+      "end_effector_required": "vacuum_cup",
+      "grasp_pose_hint": {
+        "approach_vector": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "grasp_orientation": "top_down",
+        "pregrasp_offset_mm": 50
+      },
+      "target_object_id": "obj_001",
+      "target_location_description": "align panel edge flush against aluminum fence guide, centered on conveyor belt for saw infeed",
+      "force_torque_profile": {
+        "max_force_N": 50.0,
+        "contact_force_N": 15.0,
+        "approach_speed": "slow"
+      },
+      "success_condition": "panel_edge_parallel_to_fence_within_0.5mm_gap",
+      "prerequisite_state": "panel_placed_on_conveyor_surface",
+      "safety_clearance_mm": 500,
+      "estimated_duration_seconds": 4.5,
+      "human_handoff_required": true,
+      "next_logical_action": "TRANSPORT_WORKPIECE"
+    },
+    "safety": {
+      "overall_compliance": "minor_violation",
+      "ppe_compliance": false,
+      "missing_ppe": [
+        "safety_glasses",
+        "ear_protection",
+        "gloves"
+      ],
+      "hazards_detected": [
+        {
+          "type": "pinch_point",
+          "severity": "medium",
+          "description": "conveyor belt and rollers present pinch hazard at infeed"
+        },
+        {
+          "type": "sharp_edge",
+          "severity": "medium",
+          "description": "panel edges and saw blade area ahead"
+        },
+        {
+          "type": "noise",
+          "severity": "medium",
+          "description": "panel saw operation generates high noise levels"
+        }
+      ],
+      "hazard_types": [
+        "pinch_point",
+        "sharp_edge",
+        "noise",
+        "flying_debris"
+      ],
+      "human_robot_proximity": "danger_<0.5m",
+      "robot_stop_required": false,
+      "housekeeping_state": "clear",
+      "lockout_tagout_visible": false,
+      "emergency_stop_accessible": null
+    },
+    "scene_context": {
+      "lighting_quality": "adequate",
+      "image_quality": "sharp",
+      "environment": "indoor_workshop",
+      "ambient_conditions": {
+        "dust_level": "low",
+        "chips_present": false,
+        "coolant_visible": false
+      },
+      "concurrent_operations": [],
+      "annotation_flags": [
+        "partial_visibility",
+        "needs_human_review"
+      ],
+      "free_text_notes": "Operator manually positioning white laminate panel on precision panel saw infeed conveyor. Two red push sticks visible on right side of machine for safe panel feeding. Panel appears to be approximately 500x500mm white melamine or laminate faced MDF. Machine has aluminum extrusion fence system for precise alignment. Conveyor belt is green mesh type for grip. Only operator's right hand and forearm visible wearing red/pink long sleeve."
+    }
+  },
+  "3": {
+    "frame_id": "f8a3c2d1-7e4b-4f9a-b6c8-9d2e1f0a3b5c",
+    "video_filename": "Furniture- Precision Panel Sizing.mp4",
+    "frame_index": 3,
+    "timestamp_seconds": 30.0,
+    "capture_interval_seconds": 10.0,
+    "annotated_at": "2026-03-14T11:19:51.459489+00:00",
+    "annotator": "claude-3-5-sonnet",
+    "annotation_version": "1.0.0",
+    "scene_geometry": {
+      "workspace_type": "conveyor",
+      "camera_perspective": "first_person",
+      "camera_height_estimate_m": 1.6,
+      "estimated_workspace_dimensions_m": {
+        "width": 2.5,
+        "depth": 2.0,
+        "height": 1.2
+      },
+      "depth_layers": [
+        "operator_hands",
+        "white_panel_workpiece",
+        "panel_sizing_machine",
+        "conveyor_belt",
+        "roller_conveyor",
+        "background_panels",
+        "window_wall"
+      ],
+      "reference_objects": [
+        "white_melamine_panel approximately_600x500mm",
+        "operator_hand approximately_180mm_length"
+      ],
+      "occlusions": [
+        "machine_fence_partially_occluded_by_panel",
+        "conveyor_rollers_partially_occluded_by_panel"
+      ],
+      "spatial_relationships": [
+        {
+          "subject": "white_panel",
+          "relation": "in_contact_with",
+          "object": "machine_table"
+        },
+        {
+          "subject": "operator_right_hand",
+          "relation": "in_contact_with",
+          "object": "white_panel"
+        },
+        {
+          "subject": "operator_left_hand",
+          "relation": "adjacent_to",
+          "object": "orange_safety_guard"
+        },
+        {
+          "subject": "white_panel",
+          "relation": "left_of",
+          "object": "cut_strip"
+        },
+        {
+          "subject": "cut_strip",
+          "relation": "in_contact_with",
+          "object": "outfeed_table"
+        },
+        {
+          "subject": "panel_sizing_machine",
+          "relation": "above",
+          "object": "conveyor_system"
+        }
+      ]
+    },
+    "human_presence": {
+      "count": 1,
+      "operators": [
+        {
+          "id": "operator_1",
+          "body_region_visible": [
+            "right_arm",
+            "right_hand",
+            "left_hand",
+            "left_arm"
+          ],
+          "dominant_hand": "both",
+          "pose_state": "standing",
+          "gaze_direction": "at_workpiece",
+          "action_verb": "positioning",
+          "action_phase": "active_manipulation",
+          "grip_type": "bimanual",
+          "force_estimate": "moderate",
+          "ppe_worn": [],
+          "approximate_position_in_frame": {
+            "x_pct": 0.45,
+            "y_pct": 0.75
+          }
+        }
+      ]
+    },
+    "objects": [
+      {
+        "id": "obj_001",
+        "category": "workpiece",
+        "label": "white_melamine_panel_600x500mm",
+        "bounding_box_pct": {
+          "x": 0.15,
+          "y": 0.35,
+          "width": 0.45,
+          "height": 0.45
+        },
+        "confidence": 0.95,
+        "state": "in_use",
+        "material": "melamine_faced_MDF",
+        "surface_finish_visible": "lacquered",
+        "approximate_size_class": "large_>50cm",
+        "held_by": "operator_1",
+        "contact_surface": "machine_infeed_table"
+      },
+      {
+        "id": "obj_002",
+        "category": "machine",
+        "label": "panel_sizing_saw_beam_saw",
+        "bounding_box_pct": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1.0,
+          "height": 0.35
+        },
+        "confidence": 0.92,
+        "state": "in_use",
+        "material": "steel_aluminum_construction",
+        "surface_finish_visible": "anodized",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "floor"
+      },
+      {
+        "id": "obj_003",
+        "category": "workpiece",
+        "label": "cut_panel_strip_offcut",
+        "bounding_box_pct": {
+          "x": 0.55,
+          "y": 0.45,
+          "width": 0.35,
+          "height": 0.25
+        },
+        "confidence": 0.88,
+        "state": "idle",
+        "material": "melamine_faced_MDF",
+        "surface_finish_visible": "lacquered",
+        "approximate_size_class": "medium_10-50cm",
+        "held_by": null,
+        "contact_surface": "outfeed_table"
+      },
+      {
+        "id": "obj_004",
+        "category": "machine",
+        "label": "roller_conveyor_infeed",
+        "bounding_box_pct": {
+          "x": 0.0,
+          "y": 0.55,
+          "width": 0.35,
+          "height": 0.3
+        },
+        "confidence": 0.85,
+        "state": "idle",
+        "material": "steel_rubber_rollers",
+        "surface_finish_visible": "raw",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "machine_frame"
+      },
+      {
+        "id": "obj_005",
+        "category": "safety_equipment",
+        "label": "orange_safety_guard_fence",
+        "bounding_box_pct": {
+          "x": 0.08,
+          "y": 0.5,
+          "width": 0.12,
+          "height": 0.2
+        },
+        "confidence": 0.9,
+        "state": "idle",
+        "material": "powder_coated_steel",
+        "surface_finish_visible": "painted",
+        "approximate_size_class": "medium_10-50cm",
+        "held_by": null,
+        "contact_surface": "machine_frame"
+      },
+      {
+        "id": "obj_006",
+        "category": "fixture",
+        "label": "pneumatic_clamp_hold_down",
+        "bounding_box_pct": {
+          "x": 0.25,
+          "y": 0.12,
+          "width": 0.15,
+          "height": 0.1
+        },
+        "confidence": 0.82,
+        "state": "idle",
+        "material": "aluminum_steel",
+        "surface_finish_visible": "anodized",
+        "approximate_size_class": "medium_10-50cm",
+        "held_by": null,
+        "contact_surface": "machine_beam"
+      },
+      {
+        "id": "obj_007",
+        "category": "material",
+        "label": "stacked_panels_background",
+        "bounding_box_pct": {
+          "x": 0.7,
+          "y": 0.0,
+          "width": 0.3,
+          "height": 0.5
+        },
+        "confidence": 0.75,
+        "state": "idle",
+        "material": "melamine_MDF_various",
+        "surface_finish_visible": "lacquered",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "storage_rack"
+      }
+    ],
+    "process": {
+      "operation_name": "panel_sizing_cut_positioning",
+      "operation_category": "cutting",
+      "process_phase": "in_progress",
+      "estimated_completion_pct": 40,
+      "workpiece_state_before": "full_size_melamine_panel_uncut",
+      "workpiece_state_after": "panel_positioned_for_precision_cut",
+      "quality_indicators": [
+        "panel_flat_against_table",
+        "operator_using_both_hands_for_control",
+        "panel_aligned_parallel_to_fence"
+      ],
+      "defects_visible": [],
+      "production_sequence_tag": "STEP_02_POSITION_PANEL_FOR_WIDTH_CUT",
+      "machine_settings_visible": null,
+      "consumables_present": []
+    },
+    "robot_instruction": {
+      "target_action": "POSITION_COMPONENT",
+      "action_parameters": {
+        "target_position": "against_back_fence",
+        "alignment_axis": "parallel_to_cutting_line",
+        "positioning_tolerance_mm": 0.5,
+        "feed_direction": "left_to_right",
+        "contact_pressure": "light_push_against_fence"
+      },
+      "end_effector_required": "vacuum_cup",
+      "grasp_pose_hint": {
+        "approach_vector": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "grasp_orientation": "top_down",
+        "pregrasp_offset_mm": 50
+      },
+      "target_object_id": "obj_001",
+      "target_location_description": "panel_sizing_machine_infeed_table_aligned_with_back_fence_and_side_stops",
+      "force_torque_profile": {
+        "max_force_N": 50.0,
+        "contact_force_N": 15.0,
+        "approach_speed": "slow"
+      },
+      "success_condition": "panel_flush_against_back_fence_and_aligned_with_cutting_marks",
+      "prerequisite_state": "panel_lifted_onto_infeed_table_surface",
+      "safety_clearance_mm": 500,
+      "estimated_duration_seconds": 8.0,
+      "human_handoff_required": true,
+      "next_logical_action": "CUT_MATERIAL"
+    },
+    "safety": {
+      "overall_compliance": "minor_violation",
+      "ppe_compliance": false,
+      "missing_ppe": [
+        "safety_glasses",
+        "ear_protection",
+        "gloves"
+      ],
+      "hazards_detected": [
+        {
+          "type": "cutting_blade",
+          "severity": "high",
+          "description": "panel_saw_blade_area_active_during_operation"
+        },
+        {
+          "type": "pinch_point",
+          "severity": "medium",
+          "description": "pneumatic_clamps_and_hold_downs_can_engage"
+        },
+        {
+          "type": "noise",
+          "severity": "medium",
+          "description": "panel_saw_generates_high_noise_levels"
+        }
+      ],
+      "hazard_types": [
+        "pinch_point",
+        "flying_debris",
+        "sharp_edge",
+        "noise"
+      ],
+      "human_robot_proximity": "no_humans",
+      "robot_stop_required": false,
+      "housekeeping_state": "clear",
+      "lockout_tagout_visible": false,
+      "emergency_stop_accessible": null
+    },
+    "scene_context": {
+      "lighting_quality": "adequate",
+      "image_quality": "sharp",
+      "environment": "indoor_workshop",
+      "ambient_conditions": {
+        "dust_level": "low",
+        "chips_present": false,
+        "coolant_visible": false
+      },
+      "concurrent_operations": [
+        "panel_storage_visible_in_background"
+      ],
+      "annotation_flags": [
+        "partial_visibility"
+      ],
+      "free_text_notes": "Operator is manually positioning a white melamine panel on a precision panel sizing saw (beam saw). The panel appears to be fed from left side with cut strip visible on outfeed. Industrial setting with natural light from windows. Orange safety guards visible on machine. This is a typical panel sizing operation in furniture/cabinet manufacturing where large sheets are cut to precise dimensions."
+    }
+  },
+  "4": {
+    "frame_id": "f8e2c4a1-7b3d-4e9f-a6c8-2d1f5e8b9a0c",
+    "video_filename": "Furniture- Precision Panel Sizing.mp4",
+    "frame_index": 4,
+    "timestamp_seconds": 40.0,
+    "capture_interval_seconds": 10.0,
+    "annotated_at": "2026-03-14T11:20:18.945978+00:00",
+    "annotator": "claude-3-5-sonnet",
+    "annotation_version": "1.0.0",
+    "scene_geometry": {
+      "workspace_type": "conveyor",
+      "camera_perspective": "oblique",
+      "camera_height_estimate_m": 1.6,
+      "estimated_workspace_dimensions_m": {
+        "width": 1.5,
+        "depth": 1.2,
+        "height": 0.9
+      },
+      "depth_layers": [
+        "operator_hands",
+        "panel_white",
+        "fence_guide",
+        "saw_table",
+        "green_textured_material",
+        "machine_frame",
+        "background"
+      ],
+      "reference_objects": [
+        "white_panel approximately_600x500mm",
+        "fence_guide 50mm_aluminum_extrusion"
+      ],
+      "occlusions": [
+        "saw_blade_occluded_by_panel",
+        "machine_controls_occluded_by_operator_arms"
+      ],
+      "spatial_relationships": [
+        {
+          "subject": "white_panel",
+          "relation": "in_contact_with",
+          "object": "saw_table"
+        },
+        {
+          "subject": "operator_right_hand",
+          "relation": "in_contact_with",
+          "object": "white_panel"
+        },
+        {
+          "subject": "operator_left_hand",
+          "relation": "holding",
+          "object": "push_stick"
+        },
+        {
+          "subject": "white_panel",
+          "relation": "adjacent_to",
+          "object": "fence_guide"
+        },
+        {
+          "subject": "green_material",
+          "relation": "below",
+          "object": "white_panel"
+        },
+        {
+          "subject": "fence_guide",
+          "relation": "right_of",
+          "object": "white_panel"
+        }
+      ]
+    },
+    "human_presence": {
+      "count": 1,
+      "operators": [
+        {
+          "id": "operator_1",
+          "body_region_visible": [
+            "left_arm",
+            "right_arm",
+            "left_hand",
+            "right_hand"
+          ],
+          "dominant_hand": "both",
+          "pose_state": "standing",
+          "gaze_direction": "at_workpiece",
+          "action_verb": "positioning",
+          "action_phase": "active_manipulation",
+          "grip_type": "bimanual",
+          "force_estimate": "moderate",
+          "ppe_worn": [],
+          "approximate_position_in_frame": {
+            "x_pct": 0.55,
+            "y_pct": 0.75
+          }
+        }
+      ]
+    },
+    "objects": [
+      {
+        "id": "obj_001",
+        "category": "workpiece",
+        "label": "white_melamine_panel_600x500mm",
+        "bounding_box_pct": {
+          "x": 0.2,
+          "y": 0.05,
+          "width": 0.45,
+          "height": 0.55
+        },
+        "confidence": 0.92,
+        "state": "being_transported",
+        "material": "MDF_melamine_coated",
+        "surface_finish_visible": "lacquered",
+        "approximate_size_class": "large_>50cm",
+        "held_by": "operator_1",
+        "contact_surface": "saw_table"
+      },
+      {
+        "id": "obj_002",
+        "category": "machine",
+        "label": "panel_saw_sliding_table",
+        "bounding_box_pct": {
+          "x": 0.0,
+          "y": 0.0,
+          "width": 1.0,
+          "height": 1.0
+        },
+        "confidence": 0.95,
+        "state": "in_use",
+        "material": "steel_aluminum",
+        "surface_finish_visible": "anodized",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "floor"
+      },
+      {
+        "id": "obj_003",
+        "category": "fixture",
+        "label": "aluminum_fence_guide",
+        "bounding_box_pct": {
+          "x": 0.55,
+          "y": 0.2,
+          "width": 0.15,
+          "height": 0.6
+        },
+        "confidence": 0.88,
+        "state": "in_use",
+        "material": "aluminum_extruded",
+        "surface_finish_visible": "anodized",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "saw_table"
+      },
+      {
+        "id": "obj_004",
+        "category": "hand_tool",
+        "label": "orange_push_stick",
+        "bounding_box_pct": {
+          "x": 0.35,
+          "y": 0.55,
+          "width": 0.08,
+          "height": 0.15
+        },
+        "confidence": 0.85,
+        "state": "in_use",
+        "material": "ABS_plastic",
+        "surface_finish_visible": "raw",
+        "approximate_size_class": "medium_10-50cm",
+        "held_by": "operator_1",
+        "contact_surface": null
+      },
+      {
+        "id": "obj_005",
+        "category": "material",
+        "label": "green_textured_backing_material",
+        "bounding_box_pct": {
+          "x": 0.0,
+          "y": 0.35,
+          "width": 0.35,
+          "height": 0.45
+        },
+        "confidence": 0.75,
+        "state": "idle",
+        "material": "composite_fiber",
+        "surface_finish_visible": "raw",
+        "approximate_size_class": "large_>50cm",
+        "held_by": null,
+        "contact_surface": "saw_table"
+      },
+      {
+        "id": "obj_006",
+        "category": "workpiece",
+        "label": "stacked_panel_offcut",
+        "bounding_box_pct": {
+          "x": 0.75,
+          "y": 0.55,
+          "width": 0.2,
+          "height": 0.25
+        },
+        "confidence": 0.7,
+        "state": "idle",
+        "material": "MDF_melamine_coated",
+        "surface_finish_visible": "lacquered",
+        "approximate_size_class": "medium_10-50cm",
+        "held_by": null,
+        "contact_surface": "outfeed_table"
+      }
+    ],
+    "process": {
+      "operation_name": "panel_sizing_cut",
+      "operation_category": "cutting",
+      "process_phase": "in_progress",
+      "estimated_completion_pct": 45,
+      "workpiece_state_before": "oversized_melamine_panel_requiring_dimension_cut",
+      "workpiece_state_after": "panel_cut_to_specified_width",
+      "quality_indicators": [
+        "panel_aligned_against_fence",
+        "consistent_pressure_applied",
+        "push_stick_in_use_for_safety"
+      ],
+      "defects_visible": [],
+      "production_sequence_tag": "STEP_04_PRECISION_WIDTH_CUT_PANEL",
+      "machine_settings_visible": null,
+      "consumables_present": []
+    },
+    "robot_instruction": {
+      "target_action": "CUT_MATERIAL",
+      "action_parameters": {
+        "cut_type": "rip_cut",
+        "material_thickness_mm": 18,
+        "feed_direction": "towards_blade",
+        "fence_distance_mm": 500,
+        "blade_height_mm": 25,
+        "feed_rate": "operator_controlled"
+      },
+      "end_effector_required": "vacuum_cup",
+      "grasp_pose_hint": {
+        "approach_vector": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "grasp_orientation": "top_down",
+        "pregrasp_offset_mm": 50
+      },
+      "target_object_id": "obj_001",
+      "target_location_description": "white_melamine_panel_positioned_against_fence_guide_feeding_through_panel_saw",
+      "force_torque_profile": {
+        "max_force_N": 50.0,
+        "contact_force_N": 20.0,
+        "approach_speed": "slow"
+      },
+      "success_condition": "panel_passes_completely_through_blade_with_clean_edge_cut",
+      "prerequisite_state": "panel_aligned_flush_against_fence_blade_at_correct_height",
+      "safety_clearance_mm": 500,
+      "estimated_duration_seconds": 15.0,
+      "human_handoff_required": true,
+      "next_logical_action": "INSPECT_SURFACE"
+    },
+    "safety": {
+      "overall_compliance": "minor_violation",
+      "ppe_compliance": false,
+      "missing_ppe": [
+        "safety_glasses",
+        "ear_protection",
+        "push_stick_guard"
+      ],
+      "hazards_detected": [
+        {
+          "type": "cutting_hazard",
+          "severity": "high",
+          "description": "exposed_saw_blade_area_during_active_cutting"
+        },
+        {
+          "type": "pinch_point",
+          "severity": "medium",
+          "description": "panel_feed_area_between_fence_and_blade"
+        },
+        {
+          "type": "flying_debris",
+          "severity": "medium",
+          "description": "potential_wood_chips_from_cutting_operation"
+        }
+      ],
+      "hazard_types": [
+        "pinch_point",
+        "flying_debris",
+        "sharp_edge",
+        "noise"
+      ],
+      "human_robot_proximity": "no_humans",
+      "robot_stop_required": false,
+      "housekeeping_state": "minor_clutter",
+      "lockout_tagout_visible": false,
+      "emergency_stop_accessible": null
+    },
+    "scene_context": {
+      "lighting_quality": "adequate",
+      "image_quality": "sharp",
+      "environment": "indoor_workshop",
+      "ambient_conditions": {
+        "dust_level": "low",
+        "chips_present": false,
+        "coolant_visible": false
+      },
+      "concurrent_operations": [],
+      "annotation_flags": [
+        "partial_visibility",
+        "needs_human_review"
+      ],
+      "free_text_notes": "Operator is actively feeding a white melamine-coated panel through a panel saw using proper push stick technique. The panel is being guided against an aluminum fence for precision sizing. Red long-sleeve shirt visible on operator arms. Green textured material visible on left side of saw table may be anti-slip mat or waste material. Machine appears to be industrial sliding table panel saw typical of furniture manufacturing."
+    }
+  }
+}
