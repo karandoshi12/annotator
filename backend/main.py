@@ -8,7 +8,6 @@ from pathlib import Path
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
 
 load_dotenv()
 
@@ -30,10 +29,13 @@ app.add_middleware(
 
 app.include_router(annotate_router, prefix="/api")
 
-# Serve the frontend from the parent directory
-frontend_dir = Path(__file__).parent.parent
-app.mount("/", StaticFiles(directory=str(frontend_dir), html=True), name="static")
-
+# For local development only
 if __name__ == "__main__":
     import uvicorn
+    from fastapi.staticfiles import StaticFiles
+    
+    # Serve the frontend from the parent directory
+    frontend_dir = Path(__file__).parent.parent
+    app.mount("/", StaticFiles(directory=str(frontend_dir), html=True), name="static")
+    
     uvicorn.run("main:app", host="0.0.0.0", port=8765, reload=True)
