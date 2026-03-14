@@ -1,4 +1,4 @@
-# VLA Frame Annotator
+# VLA Frame Annotator v1
 
 Extract frames from a video and annotate each frame with structured AI-generated labels for robotics / Vision-Language-Action (VLA) model training — specifically designed for **furniture manufacturing** processes.
 
