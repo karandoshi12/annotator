@@ -4,7 +4,7 @@ Extract frames from a video and annotate each frame with structured AI-generated
 
 ---
 
-## What It Does
+## What It Doess
 
 1. Upload any video (MP4, MOV, WebM, AVI)
 2. Extract frames at a fixed interval (default: every 10 seconds)
