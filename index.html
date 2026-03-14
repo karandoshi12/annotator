@@ -430,7 +430,9 @@
 <canvas id="canvas"></canvas>
 
 <script>
-const API = 'http://localhost:8765/api';
+const API = window.location.hostname === 'localhost' 
+    ? 'http://localhost:8765/api' 
+    : `${window.location.origin}/api`;
 const SESSION_ID = crypto.randomUUID();
 
 const uploadArea    = document.getElementById('upload-area');
